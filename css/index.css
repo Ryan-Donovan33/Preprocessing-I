@@ -136,6 +136,9 @@ body {
   background-color: #b5f0ff;
   font-family: 'Times New Roman', Times, serif;
 }
+html {
+  font-size: 62.5%;
+}
 .flex-center {
   display: flex;
   justify-content: center;
@@ -164,6 +167,7 @@ nav {
   padding: 1%;
   background-color: lightcyan;
   width: 100%;
+  font-size: 2rem;
 }
 nav a {
   text-decoration: none;
@@ -208,6 +212,7 @@ nav a:hover {
 @media (max-width: 500px) {
   .about div {
     width: 100%;
+    height: 50%;
   }
 }
 .about .Self-Photo {
@@ -242,14 +247,15 @@ nav a:hover {
 .about .intro h2 {
   margin: 2%;
   padding: 3%;
-  font-size: 2.4rem;
+  font-size: 4rem;
   color: #000080;
 }
 .about .intro p {
   margin: 2%;
   padding: 3%;
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: #000080;
+  line-height: 2;
 }
 .about .intro .button {
   margin: 2%;
@@ -269,16 +275,16 @@ nav a:hover {
   color: #000080;
 }
 .skills h2 {
-  font-size: 2.4rem;
+  font-size: 4rem;
   margin-bottom: 2%;
   border-bottom: 1px solid black;
   width: 100%;
   text-align: center;
 }
-.skills h2 p {
+.skills p {
   justify-content: center;
   font-size: 2rem;
-  border: 1px solid #000000;
+  line-height: 1.4;
 }
 .work {
   margin: 2%;
@@ -292,12 +298,13 @@ nav a:hover {
 }
 .work h2 {
   text-align: center;
-  bottom-margin: 1%;
+  margin-bottom: 2%;
   padding-bottom: 1%;
-  font-size: 2.4rem;
+  font-size: 4rem;
 }
 .work table {
   display: flex;
+  font-size: 2rem;
 }
 .work table th {
   border: 1px solid #000000;
@@ -325,7 +332,7 @@ nav a:hover {
   margin: 2%;
 }
 .contact h2 {
-  font-size: 2.4rem;
+  font-size: 4rem;
 }
 input[type=text],
 select,
@@ -337,6 +344,7 @@ textarea {
   resize: none;
   margin: 1%;
   color: #000080;
+  font-size: 1.5rem;
 }
 input[type=submit] {
   background-color: #000080;
@@ -345,6 +353,9 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+label {
+  font-size: 2.4rem;
 }
 input[type=submit]:hover {
   background-color: #00ffff;
