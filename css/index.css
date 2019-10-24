@@ -334,6 +334,11 @@ nav a:hover {
 .contact h2 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  .contact {
+    width: 95%;
+  }
+}
 input[type=text],
 select,
 textarea {
