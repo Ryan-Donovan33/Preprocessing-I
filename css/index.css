@@ -1,1 +1,372 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #b5f0ff;
+  font-family: 'Times New Roman', Times, serif;
+}
+html {
+  font-size: 62.5%;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  padding: 1%;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.flex-space {
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+  padding: 1%;
+}
+.spacing {
+  margin: 2%;
+  padding: 3%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+  padding: 1%;
+  background-color: lightcyan;
+  width: 100%;
+  font-size: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: #000080;
+}
+nav a:hover {
+  background-color: royalblue;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+  }
+  nav a {
+    padding: 1%;
+    margin: 2%;
+    border: 1px solid #000000;
+    width: 100%;
+    text-align: center;
+  }
+}
+.about {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  padding: 1%;
+  width: auto;
+}
+@media (max-width: 500px) {
+  .about {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+}
+.about div {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .about div {
+    width: 100%;
+    height: 50%;
+  }
+}
+.about .Self-Photo {
+  width: auto;
+  height: 60%;
+  align-items: center;
+  margin: 2%;
+  padding: 3%;
+}
+@media (max-width: 500px) {
+  .about .Self-Photo {
+    width: auto;
+    height: 50%;
+  }
+}
+.about .intro {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fdf5e6;
+  margin: 2%;
+  padding: 3%;
+}
+@media (max-width: 500px) {
+  .about .intro {
+    width: 90%;
+  }
+}
+.about .intro h2 {
+  margin: 2%;
+  padding: 3%;
+  font-size: 4rem;
+  color: #000080;
+}
+.about .intro p {
+  margin: 2%;
+  padding: 3%;
+  font-size: 2rem;
+  color: #000080;
+  line-height: 2;
+}
+.about .intro .button {
+  margin: 2%;
+  padding: 3%;
+  background-color: lightcyan;
+  border: 1px solid black;
+  color: royalblue;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 2%;
+  padding: 3%;
+  align-items: center;
+  background-color: #fdf5e6;
+  color: #000080;
+}
+.skills h2 {
+  font-size: 4rem;
+  margin-bottom: 2%;
+  border-bottom: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+.skills p {
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+.work {
+  margin: 2%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  background-color: #fdf5e6;
+  color: #000080;
+}
+.work h2 {
+  text-align: center;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
+  font-size: 4rem;
+}
+.work table {
+  display: flex;
+  font-size: 2rem;
+}
+.work table th {
+  border: 1px solid #000000;
+  margin: 2%;
+  padding: 3%;
+  width: 30%;
+}
+.work table tr {
+  border: 1px solid #000000;
+  padding: 1%;
+}
+.work table td {
+  border: 1px solid #000000;
+  padding: 1%;
+  width: 30%;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  color: #000080;
+  background-color: #fdf5e6;
+  width: 100%;
+  margin: 2%;
+}
+.contact h2 {
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .contact {
+    width: 95%;
+  }
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 2%;
+  border: 1px solid #000000;
+  border-radius: 3%;
+  resize: none;
+  margin: 1%;
+  color: #000080;
+  font-size: 1.5rem;
+}
+input[type=submit] {
+  background-color: #000080;
+  color: white;
+  padding: 1% 1.5%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+label {
+  font-size: 2.4rem;
+}
+input[type=submit]:hover {
+  background-color: #00ffff;
+}
+.container {
+  border-radius: 5px;
+  background-color: #fdf5e6;
+  padding: 2%;
+}
